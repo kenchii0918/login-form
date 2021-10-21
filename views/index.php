@@ -2,6 +2,7 @@
 
 session_start();
 $username = $_SESSION['name'];
+var_dump($_SESSION);
 if(isset($_SESSION['id'])){//ログインしているとき
   $msg = 'こんにちは' . htmlspecialchars($username, \ENT_QUOTES, 'UTF-8') . 'さん';
   $link = '<a href="logout.php">ログアウト</a>';

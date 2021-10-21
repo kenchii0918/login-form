@@ -2,7 +2,8 @@
 //変数にフォームからの値を代入
 $name = $_POST['name'];
 $mail = $_POST['mail'];
-$pass = password_hash($_POST['pass'], password_default);
+$pass = password_hash($_POST['pass'], 'password_default');
+var_dump($_POST);
 $dsn = 'mysql:host=localhost;dbname=loginForm;charset=utf8';
 $username = 'dbuser';
 $password = 'dbpass';
@@ -21,8 +22,8 @@ $stmt->bindValue(':mail', $mail);
 $stmt->execute();
 $member = $stmt->fetch();
 
-$stmt = 'null';
-$sql = 'null';
+$stmt = null;
+$sql = null;
 
 if($member['mail'] === $mail){
   $msg = '同じメールアドレスが存在します';
@@ -39,9 +40,9 @@ if($member['mail'] === $mail){
   $link = '<a href="index.php">ホーム画面</a>';
 }
 
-$stmt = 'null';
-$sql = 'null';
-$dsn = 'null';
+$stmt = null;
+$sql = null;
+$dsn = null;
 
 ?>
 <!--メッセージを出力-->

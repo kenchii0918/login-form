@@ -1,8 +1,10 @@
 <?php
+// session_start();
 //変数にフォームからの値を代入
-$name = $_POST['name'];
+// $name = $_POST['name'];
 $mail = $_POST['mail'];
-$pass = password_hash($_POST['pass'], password_default);
+// var_dump($_POST);
+// $pass = password_hash($_POST['pass'], 'password_default');
 $dsn = 'mysql:host=localhost;dbname=loginForm;charset=utf8';
 $username = 'dbuser';
 $password = 'dbpass';
@@ -21,8 +23,8 @@ $stmt->bindValue(':mail', $mail);
 $stmt->execute();
 $member = $stmt->fetch();
 
-$sql = 'null';
-$stmt = 'null';
+$sql = null;
+$stmt = null;
 
 //指定したハッシュがパスワードにマッチしているかチェック
 if(password_verify($_POST['pass'], $member['pass'])){
@@ -36,14 +38,16 @@ if(password_verify($_POST['pass'], $member['pass'])){
   $link = '<a href="login_form.php">戻る</a>';
 }
 
-
+$sql = null;
+$stmt = null;
+$dbh = null;
 ?>
 
 <!DOCTYPE html>
 <html lang="ja">
   <head>
     <meta charset="utf-8">
-    <title>test</title>
+    <title>login</title>
   </head>
   <body>
 <!--メッセージを出力-->

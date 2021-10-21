@@ -8,7 +8,7 @@ session_destroy();//sessionを破壊
 <html lang="ja">
   <head>
     <meta charset="utf-8">
-    <title>ログイン機能 Form test</title>
+    <title>logout</title>
   </head>
   <body>
     <p>ログアウトしました</p>
