@@ -2,8 +2,7 @@
 //変数にフォームからの値を代入
 $name = $_POST['name'];
 $mail = $_POST['mail'];
-$pass = password_hash($_POST['pass'], 'password_default');
-var_dump($_POST);
+$pass = password_hash($_POST['pass'], PASSWORD_DEFAULT);
 $dsn = 'mysql:host=localhost;dbname=loginForm;charset=utf8';
 $username = 'dbuser';
 $password = 'dbpass';

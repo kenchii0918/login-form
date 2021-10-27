@@ -6,7 +6,7 @@
   </head>
   <body>
     <h1>ログインページ</h1>
-<form action="login.php" methot="post">
+<form action="login.php" method="post">
   
   <div>
     <label>メールアドレス：</label>

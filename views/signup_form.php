@@ -38,7 +38,7 @@
                 <span class='badge badge-pill badge-warning'>必須</span>
               </div>
               <div class='col-7'>
-                <input class='form-control is-invalid' type='text' name='name' required>
+                <input class='form-control' type='text' name='name' required>
                 <p class='invalid-feedback'>名前を入力してください</p>
               </div>
             </div>
@@ -49,7 +49,7 @@
                 <span class='badge badge-pill badge-warning'>必須</span>
               </div>
               <div class='col-7'>
-                <input class='form-control is-invalid' type='mail' name='mail' required>
+                <input class='form-control' type='mail' name='mail' required>
                 <p class='invalid-feedback'>メールアドレスを入力してください</p>
               </div>
             </div>
@@ -60,7 +60,7 @@
                 <span class='badge badge-pill badge-warning'>必須</span>
               </div>
               <div class='col-7'>
-                <input class='form-control is-invalid' type='password' name='pass' required>
+                <input class='form-control' type='password' name='pass' required>
                 <p class='invalid-feedback'>パスワードを入力してください</p>
               </div>
             </div>

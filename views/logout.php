@@ -12,5 +12,5 @@ session_destroy();//sessionを破壊
   </head>
   <body>
     <p>ログアウトしました</p>
-    <a href="login.php">ログイン</a>
+    <a href="login_form.php">ログイン</a>
   </body>
